@@ -29,7 +29,7 @@ public class Matrix {
             this.data = new double[numberOfColumns][numberOfColumns];
             try (Scanner newScanner = new Scanner(file)){
                 for (int row = 0; scanner.hasNextLine(); row++) {
-                    String numbersRead = scanner.nextLine();
+                    String numbersRead = newScanner.nextLine();
                     String[] splitNumbersLoop = numbers.split(",");
                     int column = 0;
 
